@@ -3,13 +3,12 @@ package com.kieran.reactiveweb.model;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @lombok.Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Stuff {
+public class CatFactResponse {
 
-    private int userId;
-    private int id;
-    private String title;
-    private boolean completed;
+    private List<CatFact> data;
 }
