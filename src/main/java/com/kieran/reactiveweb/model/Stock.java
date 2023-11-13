@@ -1,14 +1,15 @@
 package com.kieran.reactiveweb.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
-@lombok.Data
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CatFactResponse {
+public class Stock {
 
-    private List<CatFact> data;
+    private String tickerSymbol;
+    private Double pricePerShare;
+    private Double percentChange;
 }
